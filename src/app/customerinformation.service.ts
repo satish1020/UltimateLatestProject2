@@ -32,7 +32,7 @@ export class CustomerInformationService {
       {
         "ein": "123-45-8291",
         "entityName": "afdsafds fadsfads",
-        "ubo": "123-45-679",
+        "ubo": "109-45-613",
         "classificationCode": "GDN-0011",
         "formationZipCode": "March 19, 2016",
         "formationCountryCode": "Leaf rake with 48-inch wooden handle.",
@@ -46,7 +46,7 @@ export class CustomerInformationService {
       {
         "ein": "137-45-8291",
         "entityName": "afdsafds fadsfads",
-        "ubo": "123-45-679",
+        "ubo": "123-45-789",
         "classificationCode": "GDN-0011",
         "formationZipCode": "March 19, 2016",
         "formationCountryCode": "Leaf rake with 48-inch wooden handle.",
@@ -60,7 +60,7 @@ export class CustomerInformationService {
       {
         "ein": "148-45-8291",
         "entityName": "afdsafds fadsfads",
-        "ubo": "123-45-679",
+        "ubo": "123-45-821",
         "classificationCode": "GDN-0011",
         "formationZipCode": "March 19, 2016",
         "formationCountryCode": "Leaf rake with 48-inch wooden handle.",
@@ -74,7 +74,7 @@ export class CustomerInformationService {
       {
         "ein": "150-45-8291",
         "entityName": "afdsafds fadsfads",
-        "ubo": "123-45-679",
+        "ubo": "123-45-312",
         "classificationCode": "GDN-0011",
         "formationZipCode": "March 19, 2016",
         "formationCountryCode": "Leaf rake with 48-inch wooden handle.",
