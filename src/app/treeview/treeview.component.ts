@@ -1,6 +1,8 @@
-import { Component, Inject,OnInit } from '@angular/core';
-import { Validators, FormBuilder } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Validators, FormBuilder, FormGroup } from '@angular/forms';
+import { Router, ActivatedRoute, Params } from '@angular/router';
+import 'rxjs/add/operator/switchMap';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-treeview',
@@ -9,9 +11,18 @@ import { Router } from '@angular/router';
 })
 export class TreeviewComponent implements OnInit {
 
-  constructor() { }
+ treeViewForm: FormGroup;
 
-  ngOnInit() {
+ constructor(private formBuilder: FormBuilder,
+     private router: Router,
+     private route: ActivatedRoute) { }
+
+ ngOnInit() {
+     this.treeViewForm = this.formBuilder.group({
+         Name: ['', [Validators.required, Validators.maxLength(40)]],
+         ITIN: ['', [Validators.required, Validators.maxLength(20)]],
+         PercentageOwner: ['', [Validators.required, Validators.maxLength(20)]],
+     });
   }
 
 }

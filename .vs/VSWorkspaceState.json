@@ -2,9 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\app",
+    "\\src\\app\\createcustomer",
     "\\src\\app\\customerexemptionselection",
-    "\\src\\app\\searchcustomer"
+    "\\src\\app\\searchcustomer",
+    "\\src\\app\\treeview",
+    "\\src\\assets",
+    "\\src\\assets\\images",
+    "\\src\\Content"
   ],
-  "SelectedNode": "\\src\\index.html",
+  "SelectedNode": "\\src\\app\\createcustomer\\createcustomer.component.ts",
   "PreviewInSolutionExplorer": false
 }

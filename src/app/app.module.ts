@@ -9,15 +9,16 @@ import { CustomerInformationService } from './customerinformation.service';
 import { CreatecustomerComponent } from './createcustomer/createcustomer.component';
 import { TreeviewComponent } from './treeview/treeview.component';
 import { CustomerexemptionselectionComponent } from './customerexemptionselection/customerexemptionselection.component';
+import { customerexemptionservice } from './customerexemptionservice';
 
 const appRoutes: Routes = [
   { path: 'search', component: SearchcustomerComponent },
-  { path: 'create/:ein', component: CreatecustomerComponent },
   { path: 'create', component: CreatecustomerComponent },
+  { path: 'create/:ein', component: CreatecustomerComponent }, 
   { path: 'treeview', component: TreeviewComponent },
-  { path: '', redirectTo: '/search', pathMatch: 'full' },
   { path: 'exemption', component: CustomerexemptionselectionComponent },
-  { path: '**', component: SearchcustomerComponent }
+  { path: '', redirectTo: '/search', pathMatch: 'full' }
+  //{ path: '**', component: SearchcustomerComponent }
 ];
 
 @NgModule({
@@ -35,7 +36,7 @@ const appRoutes: Routes = [
     HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [CustomerInformationService],
+  providers: [CustomerInformationService, customerexemptionservice],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

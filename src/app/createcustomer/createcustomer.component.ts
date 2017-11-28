@@ -28,12 +28,12 @@ export class CreatecustomerComponent implements OnInit {
       ein: ['', [Validators.required, Validators.maxLength(20)]],
       ubo: ['', Validators.required],
       classificationCode: ['', [Validators.required, Validators.maxLength(50)]],
-      formationZipCode: ['', [Validators.required, Validators.maxLength(10), validateZIP()]],
-      formationCountryCode: ['', Validators.required],
-      businessZipCode: ['', Validators.required],
-      businessCountryCode: ['', Validators.required],
-      permenantZipCode: ['', Validators.required],
-      permenantCountryCode: ['', Validators.required],
+      formationZipCode: ['', [ Validators.maxLength(10), validateZIP()]],
+      formationCountryCode: ['',  Validators.maxLength(5)],
+      businessZipCode: ['', [Validators.maxLength(10), validateZIP()]],
+      businessCountryCode: ['', Validators.maxLength(5)],
+      permanentZipCode: ['', [ Validators.maxLength(10), validateZIP()]],
+      permanentCountryCode: ['', Validators.maxLength(5)],
       status: ['', Validators.required],
       lineOfBusiness: ['', Validators.required]
     });
@@ -87,8 +87,8 @@ export class CreatecustomerComponent implements OnInit {
       formationCountryCode: custModel.formationCountryCode as string,
       formationZipCode: custModel.formationZipCode as string,
       lineOfBusiness: custModel.lineOfBusiness as string,
-      permenantCountryCode: custModel.permenantCountryCode as string,
-      permenantZipCode: custModel.permenantZipCode as string,
+      permanentCountryCode: custModel.permanentCountryCode as string,
+      permanentZipCode: custModel.permanentZipCode as string,
       status: custModel.status as string,
 
     };
@@ -111,8 +111,8 @@ export class CreatecustomerComponent implements OnInit {
       formationCountryCode: this.customer.formationCountryCode,
       businessZipCode: this.customer.businessZipCode,
       businessCountryCode: this.customer.businessCountryCode,
-      permenantZipCode: this.customer.permenantZipCode,
-      permenantCountryCode: this.customer.permenantCountryCode,
+      permanentZipCode: this.customer.permanentZipCode,
+      permanentCountryCode: this.customer.permanentCountryCode,
       status: this.customer.status,
       lineOfBusiness: this.customer.lineOfBusiness
     });

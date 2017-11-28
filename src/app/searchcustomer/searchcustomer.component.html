@@ -4,15 +4,17 @@
       <div class="col-md-12">
         <form [formGroup]="searchCustomerForm">
           <br />
-          <table>
-            <tr>
-              <td class="col-md-7">
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-7">
                 <input type="text" class="form-control" formControlName="searchText" placeholder="Search For Customer">
-              </td>
-              <td class="col-md-5">
+              </div>
+              <div class="col-md-5">
                 <button type="button" class="btn btn-primary" (click)="onSearchButtonClick()">Search</button>
-              </td>
-            </tr>
+              </div>
+            </div>
+          </div>
+          <table>
             <tr>
               <td>
                 <label class="radio-inline">
@@ -28,9 +30,9 @@
               </td>
             </tr>
           </table>
-
           <div>
             <table class="table">
+
               <thead>
                 <tr class="table-active">
                   <th></th>
@@ -53,12 +55,13 @@
                     <td>{{customer.status}}</td>
                     <td>
                       <a [routerLink]="['/create', customer.ein]">
-                        {{customer.status === 'Complete'?'View' : 'Clone'}}
+                        {{customer.status === 'Complete'?'Clone' : 'View'}}
                       </a>
                     </td>
                   </tr>
                 </ng-container>
               </tbody>
+
             </table>
           </div>
         </form>

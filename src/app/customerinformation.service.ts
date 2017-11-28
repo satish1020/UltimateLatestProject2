@@ -24,8 +24,8 @@ export class CustomerInformationService {
         "formationCountryCode": "Leaf rake with 48-inch wooden handle.",
         "businessZipCode": "57107",
         "businessCountryCode": "12345",
-        "permenantZipCode": "53145",
-        "permenantCountryCode": "67890",
+        "permanentZipCode": "53145",
+        "permanentCountryCode": "67890",
         "status": "Complete",
         "lineOfBusiness": "Equipment Finance"
       },
@@ -38,8 +38,8 @@ export class CustomerInformationService {
         "formationCountryCode": "Leaf rake with 48-inch wooden handle.",
         "businessZipCode": "57107",
         "businessCountryCode": "12345",
-        "permenantZipCode": "53145",
-        "permenantCountryCode": "67890",
+        "permanentZipCode": "53145",
+        "permanentCountryCode": "67890",
         "status": "InProcess",
         "lineOfBusiness": "Inventory Finace (Non Deposit)"
       },
@@ -52,8 +52,8 @@ export class CustomerInformationService {
         "formationCountryCode": "Leaf rake with 48-inch wooden handle.",
         "businessZipCode": "57107",
         "businessCountryCode": "12345",
-        "permenantZipCode": "53145",
-        "permenantCountryCode": "67890",
+        "permanentZipCode": "53145",
+        "permanentCountryCode": "67890",
         "status": "InProcess",
         "lineOfBusiness": "Inventory Finace (Non Deposit)"
       },
@@ -66,8 +66,8 @@ export class CustomerInformationService {
         "formationCountryCode": "Leaf rake with 48-inch wooden handle.",
         "businessZipCode": "57107",
         "businessCountryCode": "12345",
-        "permenantZipCode": "53145",
-        "permenantCountryCode": "67890",
+        "permanentZipCode": "53145",
+        "permanentCountryCode": "67890",
         "status": "InProcess",
         "lineOfBusiness": "Inventory Finace (Non Deposit)"
       },
@@ -80,8 +80,8 @@ export class CustomerInformationService {
         "formationCountryCode": "Leaf rake with 48-inch wooden handle.",
         "businessZipCode": "57107",
         "businessCountryCode": "12345",
-        "permenantZipCode": "53145",
-        "permenantCountryCode": "67890",
+        "permanentZipCode": "53145",
+        "permanentCountryCode": "67890",
         "status": "InProcess",
         "lineOfBusiness": "Inventory Finace (Non Deposit)"
       }

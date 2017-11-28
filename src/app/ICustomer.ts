@@ -7,8 +7,8 @@ export interface ICustomer {
   formationCountryCode: string,
   businessZipCode: string,
   businessCountryCode: string,
-  permenantZipCode: string,
-  permenantCountryCode: string,
+  permanentZipCode: string,
+  permanentCountryCode: string,
   status: string,
   lineOfBusiness: string
 }
